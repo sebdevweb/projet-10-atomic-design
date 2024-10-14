@@ -14,10 +14,6 @@ dist-ssr
 coverage
 *.local
 
-src/assets/css
-src/assets/sass/main.css
-src/assets/sass/main.css.map
-
 /cypress/videos/
 /cypress/screenshots/
 
