@@ -2,6 +2,7 @@
   <button
     :class="`${className}
       ${large ? 'large' : ''}
+      ${medium ? 'medium' : ''}
       ${primary ? 'primary' : ''}
       ${secondary ? 'secondary' : ''}
       ${tertiary ? 'tertiary' : ''}
