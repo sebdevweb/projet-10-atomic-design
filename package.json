@@ -10,6 +10,7 @@
     "sass": "sass --watch ./src/assets/sass/main.scss:./src/assets/css/main.css"
   },
   "dependencies": {
+    "@heroicons/vue": "^2.1.5",
     "sass": "^1.79.5",
     "vue": "^3.5.11"
   },

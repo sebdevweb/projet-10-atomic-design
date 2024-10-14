@@ -1,10 +1,11 @@
 <template>
-  <h1>hello</h1>
-<h2>sdfdsfs</h2>
+  <h1>Components App Library</h1>
+  <Buttons />
 </template>
 
 
 <script setup>
+  import Buttons from './components/organisms/Buttons.vue';
 
 </script>
 

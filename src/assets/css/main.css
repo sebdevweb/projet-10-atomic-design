@@ -5,11 +5,109 @@
   box-sizing: border-box;
 }
 * body {
-  background-color: orange;
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   font-family: "Poppins", sans-serif;
+}
+
+h3 span {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.buttons {
+  max-width: 800px;
+  margin: 12px;
+}
+.buttons_container {
+  border: 1px solid #dfdfdf;
+  padding: 16px;
+  border-radius: 10px;
+  margin: 12px 0 32px 0;
+}
+.buttons_container-line {
+  display: flex;
+  gap: 40px;
+  margin: 12px 0;
+}
+.buttons_container-line--group {
+  text-align: center;
+}
+.buttons_container-line--group label {
+  font-size: 14px;
+  color: #6e6e6e;
+}
+.buttons:not(:last-child) {
+  margin-bottom: 0;
+}
+
+button {
+  background-color: transparent;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 16px;
+  border: none;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+button.large {
+  max-height: 40px;
+}
+button.medium {
+  max-height: 40px;
+  font-size: 14px;
+  padding: 6px 12px;
+}
+button.medium svg.middle {
+  width: 16px;
+  height: 16px;
+}
+button.medium svg.right-middle {
+  width: 16px;
+  height: 16px;
+}
+button.primary {
+  background-color: #4fc08d;
+  color: #ffffff;
+}
+button.secondary {
+  background-color: #c9f4e0;
+  color: #2d825b;
+}
+button.tertiary {
+  background-color: transparent;
+  border: 1px solid #4fc08d;
+  color: #2d825b;
+}
+button:hover {
+  background-color: #42ab7c;
+  color: #ffffff;
+  transition: 0.2s ease-out;
+}
+button:active {
+  background-color: #2d825b;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+button:disabled {
+  background-color: #dfdfdf;
+  color: #767676;
+  cursor: not-allowed;
+}
+button svg.middle {
+  width: 20px;
+  height: 20px;
+}
+button svg.right-middle {
+  width: 20px;
+  height: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
