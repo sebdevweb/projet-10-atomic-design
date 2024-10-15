@@ -3,6 +3,7 @@
     :class="`${className}
       ${large ? 'large' : ''}
       ${medium ? 'medium' : ''}
+      ${small ? 'small' : ''}
       ${primary ? 'primary' : ''}
       ${secondary ? 'secondary' : ''}
       ${tertiary ? 'tertiary' : ''}
@@ -19,7 +20,8 @@
   const props = defineProps({
     buttonText: {
       type: String,
-      required: true
+      required: true,
+      default: 'Action button'
     },
     className: {
       type: String,

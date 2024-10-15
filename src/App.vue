@@ -1,5 +1,4 @@
 <template>
-  <h1>Components App Library</h1>
   <Buttons />
 </template>
 

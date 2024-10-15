@@ -18,8 +18,15 @@ h3 span {
   font-weight: 500;
 }
 
+hr {
+  border: none;
+  border-bottom: 1px dashed #767676;
+  margin: 24px 0 24px 0;
+  padding: 0 0 24px 0;
+}
+
 .buttons {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 12px;
 }
 .buttons_container {
@@ -74,6 +81,19 @@ button.medium svg.right-middle {
   width: 16px;
   height: 16px;
 }
+button.small {
+  max-height: 32px;
+  font-size: 14px;
+  padding: 4px 8px;
+}
+button.small svg.middle {
+  width: 14px;
+  height: 14px;
+}
+button.small svg.right-middle {
+  width: 14px;
+  height: 14px;
+}
 button.primary {
   background-color: #4fc08d;
   color: #ffffff;
@@ -99,6 +119,7 @@ button:active {
 button:disabled {
   background-color: #dfdfdf;
   color: #767676;
+  border: 1px dashed #767676;
   cursor: not-allowed;
 }
 button svg.middle {
