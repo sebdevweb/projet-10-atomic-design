@@ -1,9 +1,14 @@
 // Typo
-h1{}
-h2 {}
 h3 {
   span {
     font-size: 15px;
     font-weight: 500;
   }
+}
+
+hr {
+  border: none;
+  border-bottom: 1px dashed $c-button_disabled-text;
+  margin: $space-6 0 $space-6 0;
+  padding: 0 0 $space-6 0;
 }

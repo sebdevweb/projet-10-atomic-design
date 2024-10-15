@@ -29,6 +29,21 @@ button {
       }
     }
   }
+  &.small {
+    max-height: 32px;
+    font-size: 14px;
+    padding: $space-1 $space-2;
+    svg {
+      &.middle {
+        width: 14px;
+        height: 14px;
+      }
+      &.right-middle {
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
 
   &.primary {
     background-color: $c-green;
@@ -56,6 +71,7 @@ button {
   &:disabled {
     background-color: $c-button_disabled;
     color: $c-button_disabled-text;
+    border: 1px dashed $c-button_disabled-text;
     cursor: not-allowed;
   }
   svg {
