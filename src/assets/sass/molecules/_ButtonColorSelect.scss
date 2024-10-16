@@ -1,0 +1,19 @@
+
+.container__switch--color {
+  display: flex;
+  justify-content: flex-end;
+  gap: $space-3;
+  .select__color {
+    border-radius: 50%;
+    background-color: $c-white;
+    border: 1px solid $c-grey-dark;
+    width: 30px;
+    height: 30px;
+    &.blue {
+      background-color: $c-blue;
+    }
+    &.red {
+      background-color: $c-red;
+    }
+  }
+}

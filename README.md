@@ -9,3 +9,4 @@
 5. add button molecule
 6. add buttons organisms
 7. add buttons size small
+8. fix buttons
