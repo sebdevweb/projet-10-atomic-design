@@ -14,7 +14,7 @@ body {
 }
 
 h3 span {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -29,21 +29,21 @@ hr {
   max-width: 1000px;
   margin: 12px;
 }
-.buttons_container {
+.buttons__container {
   border: 1px solid #dfdfdf;
   padding: 16px;
   border-radius: 10px;
   margin: 12px 0 32px 0;
 }
-.buttons_container-line {
+.buttons__container--line {
   display: flex;
   gap: 40px;
   margin: 12px 0;
 }
-.buttons_container-line--group {
+.buttons__container--line-group {
   text-align: center;
 }
-.buttons_container-line--group label {
+.buttons__container--line-group label {
   font-size: 14px;
   color: #6e6e6e;
 }
@@ -83,7 +83,7 @@ button.medium svg.right-middle {
 }
 button.small {
   max-height: 32px;
-  font-size: 14px;
+  font-size: 13px;
   padding: 4px 8px;
 }
 button.small svg.middle {
@@ -118,8 +118,8 @@ button:active {
 }
 button:disabled {
   background-color: #dfdfdf;
-  color: #767676;
-  border: 1px dashed #767676;
+  color: #6e6e6e;
+  border: 1px solid #dfdfdf;
   cursor: not-allowed;
 }
 button svg.middle {
@@ -129,6 +129,61 @@ button svg.middle {
 button svg.right-middle {
   width: 20px;
   height: 20px;
+}
+button.blue {
+  background-color: #4f80c0;
+  color: #ffffff;
+}
+button.blue.secondary {
+  background-color: #97bef2;
+  color: #2c5284;
+}
+button.blue.tertiary {
+  background-color: transparent;
+  border: 1px solid #4f80c0;
+  color: #2c5284;
+}
+button.blue:hover {
+  background-color: #3b6cab;
+  color: #ffffff;
+  transition: 0.2s ease-out;
+}
+button.red {
+  background-color: #c04f4f;
+  color: #ffffff;
+}
+button.red.secondary {
+  background-color: #eda0a0;
+  color: #862b2b;
+}
+button.red.tertiary {
+  background-color: transparent;
+  border: 1px solid #c04f4f;
+  color: #862b2b;
+}
+button.red:hover {
+  background-color: #b03e3e;
+  color: #ffffff;
+  transition: 0.2s ease-out;
+}
+
+.container__switch--color {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+.container__switch--color .select__color {
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #6e6e6e;
+  width: 30px;
+  height: 30px;
+}
+.container__switch--color .select__color.blue {
+  background-color: #4f80c0;
+}
+.container__switch--color .select__color.red {
+  background-color: #c04f4f;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -2,17 +2,17 @@
   max-width: 1000px;
   margin: $space-3;
 
-  &_container {
+  &__container {
     border: 1px solid $c-grey_light;
     padding: $space-4;
     border-radius: 10px;
     margin: $space-3 0 $space-8 0;
 
-    &-line {
+    &--line {
       display: flex;
       gap: $space-10;
       margin: $space-3 0;
-      &--group {
+      &-group {
         text-align: center;
         label {
           font-size: 14px;
