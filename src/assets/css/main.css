@@ -13,16 +13,113 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-h3 span {
+body {
+  background-color: #ffffff;
+}
+
+#app {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+#app .pageApp {
+  display: flex;
+  min-height: 100vh;
+}
+#app .pageApp .container {
+  width: 100%;
+  padding: 40px;
+}
+#app .pageApp .container h3 span {
   font-size: 16px;
   font-weight: 500;
 }
-
-hr {
+#app .pageApp .container hr {
   border: none;
   border-bottom: 1px dashed #767676;
   margin: 24px 0 24px 0;
   padding: 0 0 24px 0;
+}
+
+aside {
+  width: calc(100% - 1100px);
+  padding: 24px 12px 24px 24px;
+  border-right: 1px solid #cecece;
+}
+aside .nav__container {
+  position: fixed;
+}
+aside .nav__container .logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #4fc08d;
+  text-decoration: none;
+}
+aside .nav__container .logo span {
+  color: #494848;
+}
+aside .nav__container nav {
+  margin-top: 48px;
+}
+aside .nav__container nav ul {
+  list-style: none;
+  display: flex;
+  margin: 16px;
+  gap: 12px;
+  flex-direction: column;
+}
+aside .nav__container nav ul a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #919191;
+  transition: ease-in 0.1s;
+  position: relative;
+  max-width: 100px;
+  width: 100%;
+}
+aside .nav__container nav ul a::after {
+  content: "";
+  background: #4fc08d;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: 0.3s ease-in-out;
+  left: 0;
+  bottom: 0;
+}
+aside .nav__container nav ul a::before {
+  content: "";
+  background-color: #4fc08d;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-radius: 50%;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: scale(0%);
+  transition: ease-in 0.2s;
+}
+aside .nav__container nav ul a:hover {
+  color: #404040;
+  transition: ease-out 0.2s;
+}
+aside .nav__container nav ul a:hover::after {
+  width: 100%;
+}
+aside .nav__container nav ul a.router-link-active {
+  color: #404040;
+}
+aside .nav__container nav ul a.router-link-active::after {
+  width: 100%;
+}
+aside .nav__container nav ul a.router-link-active::before {
+  transform: scale(100%);
+  transition: ease-out 0.2s;
+  top: 35%;
 }
 
 button {
