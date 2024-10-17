@@ -12,10 +12,10 @@ button {
   display: flex;
   align-items: center;
   &.large {
-    max-height: 40px;
+    max-height: 36px;
   }
   &.medium {
-    max-height: 40px;
+    max-height: 30px;
     font-size: 14px;
     padding: calc($space-2 - $space-1 / 2) $space-3;
     svg {
@@ -30,7 +30,7 @@ button {
     }
   }
   &.small {
-    max-height: 32px;
+    max-height: 25px;
     font-size: 13px;
     padding: $space-1 $space-2;
     svg {
@@ -48,10 +48,12 @@ button {
   &.primary {
     background-color: $c-green;
     color: $c-white;
+    border: 1px solid $c-green;
   }
   &.secondary {
     background-color: $c-green_light;
     color: $c-green_dark;
+    border: 1px solid $c-green_light;
   }
   &.tertiary {
     background-color: transparent;
@@ -62,6 +64,7 @@ button {
     background-color: $c-green_hover;
     color: $c-white;
     transition: .2s ease-out;
+    border: 1px solid $c-green;
   }
  
   &:active {
@@ -76,12 +79,12 @@ button {
   }
   svg {
     &.middle {
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
     }
     &.right-middle {
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
     }
   }
   // CHANGE COLOR
