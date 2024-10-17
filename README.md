@@ -11,3 +11,4 @@
 7. add buttons size small
 8. fix buttons
 9. add color switcher feature on Buttons.vue
+10. fix button molecule to button atom

@@ -4,7 +4,7 @@
 
 
 <script setup>
-  import Buttons from './components/organisms/Buttons.vue';
+  import Buttons from './components/molecules/Buttons.vue';
 
 </script>
 
