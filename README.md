@@ -5,10 +5,14 @@
 3. ignore => main.css.map / main.css
 
 ## MOLECULE BUTTON
-4. add npm heroicons/vue 
-5. add button molecule
-6. add buttons organisms
-7. add buttons size small
-8. fix buttons
-9. add color switcher feature on Buttons.vue
-10. fix button molecule to button atom
+1. add npm heroicons/vue 
+2. add button molecule
+3. add buttons organisms
+4. add buttons size small
+5. fix buttons
+6. add color switcher feature on Buttons.vue
+7. fix button molecule to button atom
+
+
+## ATOM FORM INPUT
+1. add FormInput.vue

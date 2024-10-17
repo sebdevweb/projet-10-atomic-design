@@ -95,7 +95,7 @@ button:active {
 }
 button:disabled {
   background-color: #dfdfdf;
-  color: #6e6e6e;
+  color: #595959;
   border: 1px solid #dfdfdf;
   cursor: not-allowed;
 }
@@ -144,6 +144,43 @@ button.red:hover {
   transition: 0.2s ease-out;
 }
 
+input {
+  height: 40px;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #eeeeee;
+  background: #eeeeee;
+  padding: 8px;
+  font-size: 16px;
+  color: #595959;
+  transition: ease-in 0.1s;
+}
+input::placeholder {
+  font-size: 16px;
+  color: #919191;
+  font-style: italic;
+}
+input:hover {
+  border: 1px solid #cecece;
+  transition: ease-out 0.2s;
+}
+input:focus-within {
+  outline: 1px solid #919191;
+  border: none;
+}
+input:disabled {
+  background-color: #cecece;
+  color: #ffffff;
+  cursor: not-allowed;
+}
+input:disabled::placeholder {
+  color: #ffffff;
+}
+input:disabled:hover {
+  border: 1px solid #cecece;
+}
+
 .buttons {
   max-width: 1000px;
   margin: 12px;
@@ -183,13 +220,13 @@ button.red:hover {
 }
 .buttons.blue .buttons__container--line-group :disabled {
   background-color: #dfdfdf;
-  color: #6e6e6e;
+  color: #595959;
   border: 1px solid #dfdfdf;
   cursor: not-allowed;
 }
 .buttons.blue .buttons__container--line-group :disabled:hover {
   background-color: #dfdfdf;
-  color: #6e6e6e;
+  color: #595959;
   border: 1px solid #dfdfdf;
 }
 .buttons.red .buttons__container--line-group .primary {
@@ -227,13 +264,13 @@ button.red:hover {
 }
 .buttons.red .buttons__container--line-group :disabled {
   background-color: #dfdfdf;
-  color: #6e6e6e;
+  color: #595959;
   border: 1px solid #dfdfdf;
   cursor: not-allowed;
 }
 .buttons.red .buttons__container--line-group :disabled:hover {
   background-color: #dfdfdf;
-  color: #6e6e6e;
+  color: #595959;
   border: 1px solid #dfdfdf;
 }
 .buttons.orange .buttons__container--line-group .primary {
@@ -271,13 +308,13 @@ button.red:hover {
 }
 .buttons.orange .buttons__container--line-group :disabled {
   background-color: #dfdfdf;
-  color: #6e6e6e;
+  color: #595959;
   border: 1px solid #dfdfdf;
   cursor: not-allowed;
 }
 .buttons.orange .buttons__container--line-group :disabled:hover {
   background-color: #dfdfdf;
-  color: #6e6e6e;
+  color: #595959;
   border: 1px solid #dfdfdf;
 }
 .buttons.yellow .buttons__container--line-group .primary {
@@ -315,13 +352,13 @@ button.red:hover {
 }
 .buttons.yellow .buttons__container--line-group :disabled {
   background-color: #dfdfdf;
-  color: #6e6e6e;
+  color: #595959;
   border: 1px solid #dfdfdf;
   cursor: not-allowed;
 }
 .buttons.yellow .buttons__container--line-group :disabled:hover {
   background-color: #dfdfdf;
-  color: #6e6e6e;
+  color: #595959;
   border: 1px solid #dfdfdf;
 }
 .buttons.purple .buttons__container--line-group .primary {
@@ -359,13 +396,13 @@ button.red:hover {
 }
 .buttons.purple .buttons__container--line-group :disabled {
   background-color: #dfdfdf;
-  color: #6e6e6e;
+  color: #595959;
   border: 1px solid #dfdfdf;
   cursor: not-allowed;
 }
 .buttons.purple .buttons__container--line-group :disabled:hover {
   background-color: #dfdfdf;
-  color: #6e6e6e;
+  color: #595959;
   border: 1px solid #dfdfdf;
 }
 .buttons.black .buttons__container--line-group .primary {
@@ -403,13 +440,13 @@ button.red:hover {
 }
 .buttons.black .buttons__container--line-group :disabled {
   background-color: #dfdfdf;
-  color: #6e6e6e;
+  color: #595959;
   border: 1px solid #dfdfdf;
   cursor: not-allowed;
 }
 .buttons.black .buttons__container--line-group :disabled:hover {
   background-color: #dfdfdf;
-  color: #6e6e6e;
+  color: #595959;
   border: 1px solid #dfdfdf;
 }
 .buttons .container__switch--color {
@@ -420,7 +457,7 @@ button.red:hover {
 .buttons .container__switch--color .select__color {
   border-radius: 50%;
   background-color: #ffffff;
-  border: 1px solid #dfdfdf;
+  border: 1px solid #cecece;
   width: 30px;
   height: 30px;
   opacity: 0.5;
@@ -452,7 +489,7 @@ button.red:hover {
   background-color: #404040;
 }
 .buttons__container {
-  border: 1px solid #dfdfdf;
+  border: 1px solid #cecece;
   padding: 16px;
   border-radius: 10px;
   margin: 12px 0 32px 0;
@@ -467,7 +504,7 @@ button.red:hover {
 }
 .buttons__container--line-group label {
   font-size: 14px;
-  color: #6e6e6e;
+  color: #595959;
 }
 .buttons:not(:last-child) {
   margin-bottom: 0;

@@ -1,0 +1,36 @@
+input {
+  height: 40px;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid $c-grey_extra-light;
+  background: $c-grey_extra-light;
+  padding: $space-2;
+  font-size: 16px;
+  color: $c-grey_dark;
+  transition: ease-in .1s;
+  &::placeholder {
+    font-size: 16px;
+    color:$c-grey;
+    font-style: italic;
+  }
+  &:hover {
+    border: 1px solid $c-grey_light;
+    transition: ease-out .2s;
+  }
+  &:focus-within {
+    outline: 1px solid $c-grey;
+    border: none;
+  }
+  &:disabled {
+    background-color: $c-grey_light;
+    color: $c-white;
+    cursor: not-allowed;
+    &::placeholder {
+      color: $c-white;
+    }
+    &:hover {
+      border: 1px solid $c-grey_light;
+    }
+  }
+}
