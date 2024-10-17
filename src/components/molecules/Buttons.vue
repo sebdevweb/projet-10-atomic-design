@@ -1,5 +1,5 @@
 <template>
-  <h1>Buttons Component</h1>
+  <h1>Button Component</h1>
   <div class="buttons" :class="currentTheme">
     <hr>
     <div class="container__switch--color">

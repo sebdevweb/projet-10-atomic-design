@@ -17,3 +17,7 @@
 ## ATOM FORM INPUT
 1. add FormInput.vue atom
 2. add Form.vue molecule
+
+## VUE ROUTER
+1. add vue-router
+2. add Navbar component
