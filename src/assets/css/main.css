@@ -25,6 +25,125 @@ hr {
   padding: 0 0 24px 0;
 }
 
+button {
+  background-color: transparent;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 16px;
+  border: none;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+button.large {
+  max-height: 36px;
+}
+button.medium {
+  max-height: 30px;
+  font-size: 14px;
+  padding: 6px 12px;
+}
+button.medium svg.middle {
+  width: 16px;
+  height: 16px;
+}
+button.medium svg.right-middle {
+  width: 16px;
+  height: 16px;
+}
+button.small {
+  max-height: 25px;
+  font-size: 13px;
+  padding: 4px 8px;
+}
+button.small svg.middle {
+  width: 14px;
+  height: 14px;
+}
+button.small svg.right-middle {
+  width: 14px;
+  height: 14px;
+}
+button.primary {
+  background-color: #4fc08d;
+  color: #ffffff;
+  border: 1px solid #4fc08d;
+}
+button.secondary {
+  background-color: #c9f4e0;
+  color: #2d825b;
+  border: 1px solid #c9f4e0;
+}
+button.tertiary {
+  background-color: transparent;
+  border: 1px solid #4fc08d;
+  color: #2d825b;
+}
+button:hover {
+  background-color: #42ab7c;
+  color: #ffffff;
+  transition: 0.2s ease-out;
+  border: 1px solid #4fc08d;
+}
+button:active {
+  background-color: #2d825b;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+button:disabled {
+  background-color: #dfdfdf;
+  color: #6e6e6e;
+  border: 1px solid #dfdfdf;
+  cursor: not-allowed;
+}
+button svg.middle {
+  width: 18px;
+  height: 18px;
+}
+button svg.right-middle {
+  width: 18px;
+  height: 18px;
+}
+button.blue {
+  background-color: #4f80c0;
+  color: #ffffff;
+}
+button.blue.secondary {
+  background-color: #97bef2;
+  color: #2c5284;
+}
+button.blue.tertiary {
+  background-color: transparent;
+  border: 1px solid #4f80c0;
+  color: #2c5284;
+}
+button.blue:hover {
+  background-color: #3b6cab;
+  color: #ffffff;
+  transition: 0.2s ease-out;
+}
+button.red {
+  background-color: #c04f4f;
+  color: #ffffff;
+}
+button.red.secondary {
+  background-color: #eda0a0;
+  color: #862b2b;
+}
+button.red.tertiary {
+  background-color: transparent;
+  border: 1px solid #c04f4f;
+  color: #862b2b;
+}
+button.red:hover {
+  background-color: #b03e3e;
+  color: #ffffff;
+  transition: 0.2s ease-out;
+}
+
 .buttons {
   max-width: 1000px;
   margin: 12px;
@@ -352,125 +471,6 @@ hr {
 }
 .buttons:not(:last-child) {
   margin-bottom: 0;
-}
-
-button {
-  background-color: transparent;
-  border-radius: 6px;
-  padding: 8px 16px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  font-size: 16px;
-  border: none;
-  transition: 0.2s ease-in;
-  cursor: pointer;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-button.large {
-  max-height: 36px;
-}
-button.medium {
-  max-height: 30px;
-  font-size: 14px;
-  padding: 6px 12px;
-}
-button.medium svg.middle {
-  width: 16px;
-  height: 16px;
-}
-button.medium svg.right-middle {
-  width: 16px;
-  height: 16px;
-}
-button.small {
-  max-height: 25px;
-  font-size: 13px;
-  padding: 4px 8px;
-}
-button.small svg.middle {
-  width: 14px;
-  height: 14px;
-}
-button.small svg.right-middle {
-  width: 14px;
-  height: 14px;
-}
-button.primary {
-  background-color: #4fc08d;
-  color: #ffffff;
-  border: 1px solid #4fc08d;
-}
-button.secondary {
-  background-color: #c9f4e0;
-  color: #2d825b;
-  border: 1px solid #c9f4e0;
-}
-button.tertiary {
-  background-color: transparent;
-  border: 1px solid #4fc08d;
-  color: #2d825b;
-}
-button:hover {
-  background-color: #42ab7c;
-  color: #ffffff;
-  transition: 0.2s ease-out;
-  border: 1px solid #4fc08d;
-}
-button:active {
-  background-color: #2d825b;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-button:disabled {
-  background-color: #dfdfdf;
-  color: #6e6e6e;
-  border: 1px solid #dfdfdf;
-  cursor: not-allowed;
-}
-button svg.middle {
-  width: 18px;
-  height: 18px;
-}
-button svg.right-middle {
-  width: 18px;
-  height: 18px;
-}
-button.blue {
-  background-color: #4f80c0;
-  color: #ffffff;
-}
-button.blue.secondary {
-  background-color: #97bef2;
-  color: #2c5284;
-}
-button.blue.tertiary {
-  background-color: transparent;
-  border: 1px solid #4f80c0;
-  color: #2c5284;
-}
-button.blue:hover {
-  background-color: #3b6cab;
-  color: #ffffff;
-  transition: 0.2s ease-out;
-}
-button.red {
-  background-color: #c04f4f;
-  color: #ffffff;
-}
-button.red.secondary {
-  background-color: #eda0a0;
-  color: #862b2b;
-}
-button.red.tertiary {
-  background-color: transparent;
-  border: 1px solid #c04f4f;
-  color: #862b2b;
-}
-button.red:hover {
-  background-color: #b03e3e;
-  color: #ffffff;
-  transition: 0.2s ease-out;
 }
 
 /*# sourceMappingURL=main.css.map */

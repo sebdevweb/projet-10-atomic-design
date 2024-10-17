@@ -1,7 +1,12 @@
+// GENERAL
 @import './_reset';
 @import './_variables';
 @import './_fonts';
 @import  './general';
 
-@import './molecules/Buttons';
+
+// ATOMS
 @import './atoms/Button';
+
+// MOLECULES
+@import './molecules/Buttons';
