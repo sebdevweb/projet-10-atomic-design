@@ -2,6 +2,367 @@
   max-width: 1000px;
   margin: $space-3;
 
+  &.blue {
+    .buttons__container {
+      &--line {
+        &-group {
+          .primary {
+            background-color: $c-blue;
+            color: $c-white;
+            border: 1px solid $c-blue;
+            &:hover {
+              background-color: $c-blue_hover;
+              border: 1px solid $c-blue_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+          }
+          .secondary {
+            background-color: $c-blue_light;
+            color: $c-blue_dark;
+            border: 1px solid $c-blue_light;
+            &:hover {
+              background-color: $c-blue_hover;
+              border: 1px solid $c-blue_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+          }
+          .tertiary {
+            background-color: transparent;
+            border: 1px solid $c-blue;
+            color: $c-blue_dark;
+            &:hover {
+              background-color: $c-blue_hover;
+              border: 1px solid $c-blue_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+          }
+          :disabled {
+            background-color: $c-button_disabled;
+            color: $c-grey_dark;
+            border: 1px solid $c-button_disabled;
+            cursor: not-allowed;
+            &:hover {
+              background-color: $c-button_disabled;
+              color: $c-grey_dark;
+              border: 1px solid $c-button_disabled;
+              
+            }
+          }
+        }
+      }
+    }
+  }
+  &.red {
+    .buttons__container {
+      &--line {
+        &-group {
+          .primary {
+            background-color: $c-red;
+            color: $c-white;
+            border: 1px solid $c-red;
+            &:hover {
+              background-color: $c-red_hover;
+              border: 1px solid $c-red_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+          }
+          .secondary {
+            background-color: $c-red_light;
+            color: $c-red_dark;
+            border: 1px solid $c-red_light;
+            &:hover {
+              background-color: $c-red_hover;
+              border: 1px solid $c-red_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+          }
+          .tertiary {
+            background-color: transparent;
+            border: 1px solid $c-red;
+            color: $c-red_dark;
+            &:hover {
+              background-color: $c-red_hover;
+              border: 1px solid $c-red_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+          }
+          :disabled {
+            background-color: $c-button_disabled;
+            color: $c-grey_dark;
+            border: 1px solid $c-button_disabled;
+            cursor: not-allowed;
+            &:hover {
+              background-color: $c-button_disabled;
+              color: $c-grey_dark;
+              border: 1px solid $c-button_disabled;
+              
+            }
+          }
+        }
+      }
+    }
+  }
+  &.orange {
+    .buttons__container {
+      &--line {
+        &-group {
+          .primary {
+            background-color: $c-orange;
+            color: $c-white;
+            border: 1px solid $c-orange;
+            &:hover {
+              background-color: $c-orange_hover;
+              border: 1px solid $c-orange_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+          }
+          .secondary {
+            background-color: $c-orange_light;
+            color: $c-orange_dark;
+            border: 1px solid $c-orange_light;
+            &:hover {
+              background-color: $c-orange_hover;
+              border: 1px solid $c-orange_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+          }
+          .tertiary {
+            background-color: transparent;
+            border: 1px solid $c-orange;
+            color: $c-orange_dark;
+            &:hover {
+              background-color: $c-orange_hover;
+              border: 1px solid $c-orange_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+          }
+          :disabled {
+            background-color: $c-button_disabled;
+            color: $c-grey_dark;
+            border: 1px solid $c-button_disabled;
+            cursor: not-allowed;
+            &:hover {
+              background-color: $c-button_disabled;
+              color: $c-grey_dark;
+              border: 1px solid $c-button_disabled;
+              
+            }
+          }
+        }
+      }
+    }
+  }
+  &.yellow {
+    .buttons__container {
+      &--line {
+        &-group {
+          .primary {
+            background-color: $c-yellow;
+            color: $c-white;
+            border: 1px solid $c-yellow;
+            &:hover {
+              background-color: $c-yellow_hover;
+              border: 1px solid $c-yellow_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+          }
+          .secondary {
+            background-color: $c-yellow_light;
+            color: $c-yellow_dark;
+            border: 1px solid $c-yellow_light;
+            &:hover {
+              background-color: $c-yellow_hover;
+              border: 1px solid $c-yellow_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+          }
+          .tertiary {
+            background-color: transparent;
+            border: 1px solid $c-yellow;
+            color: $c-yellow_dark;
+            &:hover {
+              background-color: $c-yellow_hover;
+              border: 1px solid $c-yellow_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+          }
+          :disabled {
+            background-color: $c-button_disabled;
+            color: $c-grey_dark;
+            border: 1px solid $c-button_disabled;
+            cursor: not-allowed;
+            &:hover {
+              background-color: $c-button_disabled;
+              color: $c-grey_dark;
+              border: 1px solid $c-button_disabled;
+              
+            }
+          }
+        }
+      }
+    }
+  }
+  &.purple {
+    .buttons__container {
+      &--line {
+        &-group {
+          .primary {
+            background-color: $c-purple;
+            color: $c-white;
+            border: 1px solid $c-purple;
+            &:hover {
+              background-color: $c-purple_hover;
+              border: 1px solid $c-purple_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+          }
+          .secondary {
+            background-color: $c-purple_light;
+            color: $c-purple_dark;
+            border: 1px solid $c-purple_light;
+            &:hover {
+              background-color: $c-purple_hover;
+              border: 1px solid $c-purple_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+          }
+          .tertiary {
+            background-color: transparent;
+            border: 1px solid $c-purple;
+            color: $c-purple_dark;
+            &:hover {
+              background-color: $c-purple_hover;
+              border: 1px solid $c-purple_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+          }
+          :disabled {
+            background-color: $c-button_disabled;
+            color: $c-grey_dark;
+            border: 1px solid $c-button_disabled;
+            cursor: not-allowed;
+            &:hover {
+              background-color: $c-button_disabled;
+              color: $c-grey_dark;
+              border: 1px solid $c-button_disabled;
+              
+            }
+          }
+        }
+      }
+    }
+  }
+  &.black {
+    .buttons__container {
+      &--line {
+        &-group {
+          .primary {
+            background-color: $c-black;
+            color: $c-white;
+            border: 1px solid $c-black;
+            &:hover {
+              background-color: $c-black_hover;
+              border: 1px solid $c-black_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+          }
+          .secondary {
+            background-color: $c-black_light;
+            color: $c-black_dark;
+            border: 1px solid $c-black_light;
+            &:hover {
+              background-color: $c-black_hover;
+              border: 1px solid $c-black_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+          }
+          .tertiary {
+            background-color: transparent;
+            border: 1px solid $c-black;
+            color: $c-black_dark;
+            &:hover {
+              background-color: $c-black_hover;
+              border: 1px solid $c-black_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+          }
+          :disabled {
+            background-color: $c-button_disabled;
+            color: $c-grey_dark;
+            border: 1px solid $c-button_disabled;
+            cursor: not-allowed;
+            &:hover {
+              background-color: $c-button_disabled;
+              color: $c-grey_dark;
+              border: 1px solid $c-button_disabled;
+              
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // test
+  .container__switch--color {
+    display: flex;
+    justify-content: flex-end;
+    gap: $space-3;
+    .select__color {
+      border-radius: 50%;
+      background-color: $c-white;
+      border: 1px solid $c-grey-light;
+      width: 30px;
+      height: 30px;
+      opacity: 0.5;
+      transition: ease-in .2s;
+      &.active {
+        opacity: 1;
+        transition: ease-out .2s;
+      }
+      &.green {
+        background-color: $c-green;
+      }
+      &.blue {
+        background-color: $c-blue;
+      }
+      &.red {
+        background-color: $c-red;
+      }
+      &.orange {
+        background-color: $c-orange;
+      }
+      &.yellow {
+        background-color: $c-yellow;
+      }
+      &.purple {
+        background-color: $c-purple;
+      }
+      &.black {
+        background-color: $c-black;
+      }
+    }
+  }
+  // end test
+
   &__container {
     border: 1px solid $c-grey_light;
     padding: $space-4;
@@ -14,6 +375,7 @@
       margin: $space-3 0;
       &-group {
         text-align: center;
+        
         label {
           font-size: 14px;
           color: $c-grey_dark;
