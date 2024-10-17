@@ -87,42 +87,4 @@ button {
       height: 18px;
     }
   }
-  // CHANGE COLOR
-  &.blue {
-    background-color: $c-blue;
-    color: $c-white;
-    &.secondary {
-      background-color: $c-blue_light;
-      color: $c-blue_dark;
-    }
-    &.tertiary {
-      background-color: transparent;
-      border: 1px solid $c-blue;
-      color: $c-blue_dark;
-    }
-    &:hover {
-      background-color: $c-blue_hover;
-      color: $c-white;
-      transition: .2s ease-out;
-    }
-  }
-  &.red {
-    background-color: $c-red;
-    color: $c-white;
-    &.secondary {
-      background-color: $c-red_light;
-      color: $c-red_dark;
-    }
-    &.tertiary {
-      background-color: transparent;
-      border: 1px solid $c-red;
-      color: $c-red_dark;
-    }
-    &:hover {
-      background-color: $c-red_hover;
-      color: $c-white;
-      transition: .2s ease-out;
-    }
-  }
-  
 }

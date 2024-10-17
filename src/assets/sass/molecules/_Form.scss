@@ -1,0 +1,24 @@
+.form {
+  max-width: 1200px;
+  margin:$space-3;
+  &__container {
+    form {
+      margin: $space-3 0 $space-8 0;
+      border-radius: 10px;
+      padding: $space-8 $space-4;
+      border: 1px solid $c-grey_light;
+      display: flex;
+      gap: $space-6;
+      .form__container--item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        label {
+          font-size: 14px;
+          color: $c-grey_dark;
+          margin-top: $space-2;
+        }      
+      }
+    }
+  }
+}

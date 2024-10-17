@@ -1,12 +1,12 @@
 <template>
-  <InputForm />
+  <Form />
   <Buttons />
 </template>
 
 
 <script setup>
   import Buttons from './components/molecules/Buttons.vue';
-  import InputForm from './components/atoms/InputForm.vue';
+  import Form from './components/molecules/Form.vue';
 
 </script>
 

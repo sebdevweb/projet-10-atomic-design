@@ -1,10 +1,26 @@
 <template>
-  <form action="">
-    <input type="text" placeholder="Text">
-  </form>
+  <input 
+    :type="inputType" 
+    :placeholder="inputPlaceholder"
+    :class="`${className}`"
+  >
+  
 </template>
 
 
-<script>
+<script setup>
 
+  const props = defineProps({
+    inputPlaceholder: {
+      type: String,
+      default: 'input text'
+    },
+    inputType: {
+      type: String,
+      default: 'text'
+    },
+    className: {
+      type: String
+    }
+  })
 </script>

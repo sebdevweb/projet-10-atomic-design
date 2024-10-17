@@ -95,7 +95,7 @@ button:active {
 }
 button:disabled {
   background-color: #dfdfdf;
-  color: #595959;
+  color: #494848;
   border: 1px solid #dfdfdf;
   cursor: not-allowed;
 }
@@ -107,42 +107,6 @@ button svg.right-middle {
   width: 18px;
   height: 18px;
 }
-button.blue {
-  background-color: #4f80c0;
-  color: #ffffff;
-}
-button.blue.secondary {
-  background-color: #97bef2;
-  color: #2c5284;
-}
-button.blue.tertiary {
-  background-color: transparent;
-  border: 1px solid #4f80c0;
-  color: #2c5284;
-}
-button.blue:hover {
-  background-color: #3b6cab;
-  color: #ffffff;
-  transition: 0.2s ease-out;
-}
-button.red {
-  background-color: #c04f4f;
-  color: #ffffff;
-}
-button.red.secondary {
-  background-color: #eda0a0;
-  color: #862b2b;
-}
-button.red.tertiary {
-  background-color: transparent;
-  border: 1px solid #c04f4f;
-  color: #862b2b;
-}
-button.red:hover {
-  background-color: #b03e3e;
-  color: #ffffff;
-  transition: 0.2s ease-out;
-}
 
 input {
   height: 40px;
@@ -153,36 +117,79 @@ input {
   background: #eeeeee;
   padding: 8px;
   font-size: 16px;
-  color: #595959;
+  color: #494848;
   transition: ease-in 0.1s;
+  position: relative;
 }
-input::placeholder {
+input.default::placeholder {
   font-size: 16px;
   color: #919191;
   font-style: italic;
 }
-input:hover {
-  border: 1px solid #cecece;
+input.default:hover {
+  border: 1px solid #919191;
   transition: ease-out 0.2s;
+  background-color: #eeeeee;
 }
-input:focus-within {
-  outline: 1px solid #919191;
-  border: none;
+input.default:hover::placeholder {
+  color: #494848;
+}
+input.default:focus-within {
+  border: 1px solid #494848;
+  outline: none;
 }
 input:disabled {
   background-color: #cecece;
-  color: #ffffff;
+  color: #494848;
   cursor: not-allowed;
 }
 input:disabled::placeholder {
-  color: #ffffff;
+  color: #494848;
 }
 input:disabled:hover {
   border: 1px solid #cecece;
 }
+input.error {
+  background-color: #ffcbcb;
+  border: 1px solid #eda0a0;
+}
+input.error::placeholder {
+  color: #c04f4f;
+}
+input.error:hover {
+  background-color: #eda0a0;
+  border: 1px solid #c04f4f;
+  cursor: not-allowed;
+}
+input.error:hover::placeholder {
+  color: #862b2b;
+}
+input.error:focus-within {
+  border: 1px solid #862b2b;
+  outline: none;
+}
+input.success {
+  background-color: #d9fded;
+  border: 1px solid #c9f4e0;
+  cursor: default;
+}
+input.success::placeholder {
+  color: #4fc08d;
+}
+input.success:hover {
+  background-color: #c9f4e0;
+  border: 1px solid #4fc08d;
+}
+input.success:hover::placeholder {
+  color: #2d825b;
+}
+input.success:focus-within {
+  border: 1px solid #2d825b;
+  outline: none;
+}
 
 .buttons {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 12px;
 }
 .buttons.blue .buttons__container--line-group .primary {
@@ -220,13 +227,13 @@ input:disabled:hover {
 }
 .buttons.blue .buttons__container--line-group :disabled {
   background-color: #dfdfdf;
-  color: #595959;
+  color: #494848;
   border: 1px solid #dfdfdf;
   cursor: not-allowed;
 }
 .buttons.blue .buttons__container--line-group :disabled:hover {
   background-color: #dfdfdf;
-  color: #595959;
+  color: #494848;
   border: 1px solid #dfdfdf;
 }
 .buttons.red .buttons__container--line-group .primary {
@@ -264,13 +271,13 @@ input:disabled:hover {
 }
 .buttons.red .buttons__container--line-group :disabled {
   background-color: #dfdfdf;
-  color: #595959;
+  color: #494848;
   border: 1px solid #dfdfdf;
   cursor: not-allowed;
 }
 .buttons.red .buttons__container--line-group :disabled:hover {
   background-color: #dfdfdf;
-  color: #595959;
+  color: #494848;
   border: 1px solid #dfdfdf;
 }
 .buttons.orange .buttons__container--line-group .primary {
@@ -308,13 +315,13 @@ input:disabled:hover {
 }
 .buttons.orange .buttons__container--line-group :disabled {
   background-color: #dfdfdf;
-  color: #595959;
+  color: #494848;
   border: 1px solid #dfdfdf;
   cursor: not-allowed;
 }
 .buttons.orange .buttons__container--line-group :disabled:hover {
   background-color: #dfdfdf;
-  color: #595959;
+  color: #494848;
   border: 1px solid #dfdfdf;
 }
 .buttons.yellow .buttons__container--line-group .primary {
@@ -352,13 +359,13 @@ input:disabled:hover {
 }
 .buttons.yellow .buttons__container--line-group :disabled {
   background-color: #dfdfdf;
-  color: #595959;
+  color: #494848;
   border: 1px solid #dfdfdf;
   cursor: not-allowed;
 }
 .buttons.yellow .buttons__container--line-group :disabled:hover {
   background-color: #dfdfdf;
-  color: #595959;
+  color: #494848;
   border: 1px solid #dfdfdf;
 }
 .buttons.purple .buttons__container--line-group .primary {
@@ -396,13 +403,13 @@ input:disabled:hover {
 }
 .buttons.purple .buttons__container--line-group :disabled {
   background-color: #dfdfdf;
-  color: #595959;
+  color: #494848;
   border: 1px solid #dfdfdf;
   cursor: not-allowed;
 }
 .buttons.purple .buttons__container--line-group :disabled:hover {
   background-color: #dfdfdf;
-  color: #595959;
+  color: #494848;
   border: 1px solid #dfdfdf;
 }
 .buttons.black .buttons__container--line-group .primary {
@@ -440,13 +447,13 @@ input:disabled:hover {
 }
 .buttons.black .buttons__container--line-group :disabled {
   background-color: #dfdfdf;
-  color: #595959;
+  color: #494848;
   border: 1px solid #dfdfdf;
   cursor: not-allowed;
 }
 .buttons.black .buttons__container--line-group :disabled:hover {
   background-color: #dfdfdf;
-  color: #595959;
+  color: #494848;
   border: 1px solid #dfdfdf;
 }
 .buttons .container__switch--color {
@@ -504,10 +511,33 @@ input:disabled:hover {
 }
 .buttons__container--line-group label {
   font-size: 14px;
-  color: #595959;
+  color: #494848;
 }
 .buttons:not(:last-child) {
   margin-bottom: 0;
+}
+
+.form {
+  max-width: 1200px;
+  margin: 12px;
+}
+.form__container form {
+  margin: 12px 0 32px 0;
+  border-radius: 10px;
+  padding: 32px 16px;
+  border: 1px solid #cecece;
+  display: flex;
+  gap: 24px;
+}
+.form__container form .form__container--item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.form__container form .form__container--item label {
+  font-size: 14px;
+  color: #494848;
+  margin-top: 8px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -9,28 +9,80 @@ input {
   font-size: 16px;
   color: $c-grey_dark;
   transition: ease-in .1s;
-  &::placeholder {
-    font-size: 16px;
-    color:$c-grey;
-    font-style: italic;
+  position: relative;
+
+  &.default {
+    &::placeholder {
+      font-size: 16px;
+      color:$c-grey;
+      font-style: italic;
+    }
+    &:hover {
+      border: 1px solid $c-grey;
+      transition: ease-out .2s;
+      background-color: $c-grey_extra-light;
+      &::placeholder {
+        color: $c-grey_dark;
+      }
+    }
+    &:focus-within {
+      border: 1px solid $c-grey_dark;
+      outline: none;
+    }
   }
-  &:hover {
-    border: 1px solid $c-grey_light;
-    transition: ease-out .2s;
-  }
-  &:focus-within {
-    outline: 1px solid $c-grey;
-    border: none;
-  }
+
   &:disabled {
     background-color: $c-grey_light;
-    color: $c-white;
+    color: $c-grey_dark;
     cursor: not-allowed;
     &::placeholder {
-      color: $c-white;
+      color: $c-grey_dark;
     }
     &:hover {
       border: 1px solid $c-grey_light;
+    }
+  }
+  
+
+  // ERROR
+  &.error {
+    background-color: $c-red_extra-light;
+    border: 1px solid $c-red_light;
+    &::placeholder {
+      color: $c-red;
+    }
+    &:hover {
+      background-color: $c-red_light;
+      border: 1px solid $c-red;
+      cursor: not-allowed;
+      &::placeholder {
+        color: $c-red_dark;
+      }
+    }
+    &:focus-within {
+      border: 1px solid $c-red_dark;
+      outline: none;
+    }
+  }
+
+  // SUCCESS
+  &.success {
+    background-color: $c-green_extra-light;
+    border: 1px solid $c-green_light;
+    cursor: default;
+    &::placeholder {
+      color: $c-green;
+    }
+    &:hover {
+      background-color: $c-green_light;
+      border: 1px solid $c-green;
+      &::placeholder {
+        color: $c-green_dark;
+      }
+    }
+    &:focus-within {
+      border: 1px solid $c-green_dark;
+      outline: none;
     }
   }
 }
