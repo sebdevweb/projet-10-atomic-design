@@ -15,6 +15,10 @@
       type: String,
       default: 'input text'
     },
+    inputValue: {
+      type: String,
+      default: 'Your texte'
+    },
     inputType: {
       type: String,
       default: 'text'

@@ -7,7 +7,6 @@
       <a href="#" class="select__color blue" :class="{'active': currentTheme === 'blue'}" @click="switchTheme('blue')"></a>
       <a href="#" class="select__color red" :class="{'active': currentTheme === 'red'}" @click="switchTheme('red')"></a>
       <a href="#" class="select__color orange" :class="{'active': currentTheme === 'orange'}" @click="switchTheme('orange')"></a>
-      <a href="#" class="select__color yellow" :class="{'active': currentTheme === 'yellow'}" @click="switchTheme('yellow')"></a>
       <a href="#" class="select__color purple" :class="{'active': currentTheme === 'purple'}" @click="switchTheme('purple')"></a>
       <a href="#" class="select__color black" :class="{'active': currentTheme === 'black'}" @click="switchTheme('black')"></a>
     </div>
