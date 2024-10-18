@@ -1,8 +1,9 @@
 aside {
-  width: calc(100% - 1100px);
-  // background-color: $c-grey_extra-light;
+  max-width: 400px;
+  width: 100%;
   padding: $space-6 $space-3 $space-6 $space-6;
   border-right: 1px solid $c-grey_light;
+  box-shadow: 8px 0px 10px 0px rgba(0, 0, 0, 0.15);
   .nav__container {
     position: fixed;
     .logo {
@@ -10,8 +11,13 @@ aside {
       font-weight: bold;
       color: $c-green;
       text-decoration: none;
+      transition: ease-in .1s;
       span {
         color: $c-grey_dark;
+      }
+      @media screen and (max-width: 1024px) {
+        font-size: 18px;
+        transition: ease-out .2s;
       }
     }
     nav {
@@ -20,25 +26,26 @@ aside {
         list-style: none;
         display: flex;
         margin: $space-4;
-        gap: $space-3;
+        gap: $space-4;
         flex-direction: column;
         a {
           text-decoration: none;
-          font-size: 18px;
+          font-size: 16px;
           color: $c-grey;
           transition: ease-in .1s;
           position: relative;
           max-width: 100px;
           width: 100%;
+          font-weight: 300;
           &::after {
             content: '';
             background: $c-green;
             display: block;
             position: absolute;
-            bottom: -3px;
+            bottom: 5px;
             left: 0;
             width: 0;
-            height: 2px;
+            height: 1px;
             transition: 0.3s ease-in-out;
 
             left: 0;

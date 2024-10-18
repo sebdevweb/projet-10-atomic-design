@@ -25,3 +25,6 @@
 ## VUE ROUTER
 1. add vue-router
 2. add Navbar component
+
+## NAVIGATION-COMP
+1. fix width navigation

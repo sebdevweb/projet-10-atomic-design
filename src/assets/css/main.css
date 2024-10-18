@@ -42,9 +42,11 @@ body {
 }
 
 aside {
-  width: calc(100% - 1100px);
+  max-width: 400px;
+  width: 100%;
   padding: 24px 12px 24px 24px;
   border-right: 1px solid #cecece;
+  box-shadow: 8px 0px 10px 0px rgba(0, 0, 0, 0.15);
 }
 aside .nav__container {
   position: fixed;
@@ -54,9 +56,16 @@ aside .nav__container .logo {
   font-weight: bold;
   color: #3fb44f;
   text-decoration: none;
+  transition: ease-in 0.1s;
 }
 aside .nav__container .logo span {
   color: #494848;
+}
+@media screen and (max-width: 1024px) {
+  aside .nav__container .logo {
+    font-size: 18px;
+    transition: ease-out 0.2s;
+  }
 }
 aside .nav__container nav {
   margin-top: 48px;
@@ -65,27 +74,28 @@ aside .nav__container nav ul {
   list-style: none;
   display: flex;
   margin: 16px;
-  gap: 12px;
+  gap: 16px;
   flex-direction: column;
 }
 aside .nav__container nav ul a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   color: #919191;
   transition: ease-in 0.1s;
   position: relative;
   max-width: 100px;
   width: 100%;
+  font-weight: 300;
 }
 aside .nav__container nav ul a::after {
   content: "";
   background: #3fb44f;
   display: block;
   position: absolute;
-  bottom: -3px;
+  bottom: 5px;
   left: 0;
   width: 0;
-  height: 2px;
+  height: 1px;
   transition: 0.3s ease-in-out;
   left: 0;
   bottom: 0;
@@ -104,14 +114,14 @@ aside .nav__container nav ul a::before {
   transition: ease-in 0.2s;
 }
 aside .nav__container nav ul a:hover {
-  color: #242638;
+  color: #26293c;
   transition: ease-out 0.2s;
 }
 aside .nav__container nav ul a:hover::after {
   width: 100%;
 }
 aside .nav__container nav ul a.router-link-active {
-  color: #242638;
+  color: #26293c;
 }
 aside .nav__container nav ul a.router-link-active::after {
   width: 100%;
@@ -511,13 +521,13 @@ input.success:focus-within {
   border: 1px solid #dfdfdf;
 }
 .buttons.black .buttons__container--line-group .primary {
-  background-color: #242638;
+  background-color: #26293c;
   color: #ffffff;
-  border: 1px solid #242638;
+  border: 1px solid #26293c;
 }
 .buttons.black .buttons__container--line-group .primary:hover {
-  background-color: #161821;
-  border: 1px solid #161821;
+  background-color: #1c1f2b;
+  border: 1px solid #1c1f2b;
   color: #ffffff;
   transition: 0.2s ease-out;
 }
@@ -526,13 +536,13 @@ input.success:focus-within {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 .buttons.black .buttons__container--line-group .secondary {
-  background-color: #d5d9F2;
+  background-color: #e8eaf5;
   color: #000000;
-  border: 1px solid #d5d9F2;
+  border: 1px solid #e8eaf5;
 }
 .buttons.black .buttons__container--line-group .secondary:hover {
-  background-color: #161821;
-  border: 1px solid #161821;
+  background-color: #1c1f2b;
+  border: 1px solid #1c1f2b;
   color: #ffffff;
   transition: 0.2s ease-out;
 }
@@ -542,12 +552,12 @@ input.success:focus-within {
 }
 .buttons.black .buttons__container--line-group .tertiary {
   background-color: transparent;
-  border: 1px solid #242638;
+  border: 1px solid #26293c;
   color: #000000;
 }
 .buttons.black .buttons__container--line-group .tertiary:hover {
-  background-color: #161821;
-  border: 1px solid #161821;
+  background-color: #1c1f2b;
+  border: 1px solid #1c1f2b;
   color: #ffffff;
   transition: 0.2s ease-out;
 }
@@ -600,7 +610,7 @@ input.success:focus-within {
   background-color: #8700e7;
 }
 .buttons .container__switch--color .select__color.black {
-  background-color: #242638;
+  background-color: #26293c;
 }
 .buttons__container {
   border: 1px solid #cecece;
