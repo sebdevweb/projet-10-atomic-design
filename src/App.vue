@@ -11,8 +11,9 @@
 
 
 <script setup>
-  import Buttons from './components/molecules/Buttons.vue';
-  import Form from './components/molecules/Form.vue';
+  import Buttons from './pages/Buttons.vue';
+import ButtonsIcons from './pages/ButtonsIcons.vue';
+  import Form from './pages/Form.vue';
 import Navbar from './components/Navbar.vue';
 
 </script>

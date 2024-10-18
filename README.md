@@ -15,6 +15,11 @@
 8. fix colors to wcag
 9. fix spacing on button element
 
+## ATOM BUTTON ICON
+1. add ButtonIcon.vue Atom
+2. add ButtonsIcons.vue Molecules
+3. change molecules path files to pages 
+
 
 ## ATOM FORM INPUT
 1. add FormInput.vue atom

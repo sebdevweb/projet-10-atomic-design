@@ -1,0 +1,398 @@
+.buttonsIcons {
+  max-width: 1200px;
+  margin: $space-3;
+
+  &.blue {
+    .buttonsIcons__container {
+      &--line {
+        &-group {
+          .primary {
+            background-color: $c-blue;
+            color: $c-white;
+            border: 1px solid $c-blue;
+            &:hover {
+              background-color: $c-blue_hover;
+              border: 1px solid $c-blue_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+            &:active {
+              background-color: $c-blue_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
+          }
+          .secondary {
+            background-color: $c-blue_light;
+            color: $c-blue_dark;
+            border: 1px solid $c-blue_light;
+            &:hover {
+              background-color: $c-blue_hover;
+              border: 1px solid $c-blue_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+            &:active {
+              background-color: $c-blue_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
+          }
+          .tertiary {
+            background-color: transparent;
+            border: 1px solid $c-blue;
+            color: $c-blue_dark;
+            &:hover {
+              background-color: $c-blue_hover;
+              border: 1px solid $c-blue_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+            &:active {
+              background-color: $c-blue_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
+          }
+          :disabled {
+            background-color: $c-button_disabled;
+            color: $c-grey_dark;
+            border: 1px solid $c-button_disabled;
+            cursor: not-allowed;
+            &:hover {
+              background-color: $c-button_disabled;
+              color: $c-grey_dark;
+              border: 1px solid $c-button_disabled;
+              
+            }
+          }
+        }
+      }
+    }
+  }
+  &.red {
+    .buttonsIcons__container {
+      &--line {
+        &-group {
+          .primary {
+            background-color: $c-red;
+            color: $c-white;
+            border: 1px solid $c-red;
+            &:hover {
+              background-color: $c-red_hover;
+              border: 1px solid $c-red_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+            &:active {
+              background-color: $c-red_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
+          }
+          .secondary {
+            background-color: $c-red_light;
+            color: $c-red_dark;
+            border: 1px solid $c-red_light;
+            &:hover {
+              background-color: $c-red_hover;
+              border: 1px solid $c-red_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+            &:active {
+              background-color: $c-red_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
+          }
+          .tertiary {
+            background-color: transparent;
+            border: 1px solid $c-red;
+            color: $c-red_dark;
+            &:hover {
+              background-color: $c-red_hover;
+              border: 1px solid $c-red_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+            &:active {
+              background-color: $c-red_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
+          }
+          :disabled {
+            background-color: $c-button_disabled;
+            color: $c-grey_dark;
+            border: 1px solid $c-button_disabled;
+            cursor: not-allowed;
+            &:hover {
+              background-color: $c-button_disabled;
+              color: $c-grey_dark;
+              border: 1px solid $c-button_disabled;
+              
+            }
+          }
+        }
+      }
+    }
+  }
+  &.orange {
+    .buttonsIcons__container {
+      &--line {
+        &-group {
+          .primary {
+            background-color: $c-orange;
+            color: $c-white;
+            border: 1px solid $c-orange;
+            &:hover {
+              background-color: $c-orange_hover;
+              border: 1px solid $c-orange_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+            &:active {
+              background-color: $c-orange_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
+          }
+          .secondary {
+            background-color: $c-orange_light;
+            color: $c-orange_dark;
+            border: 1px solid $c-orange_light;
+            &:hover {
+              background-color: $c-orange_hover;
+              border: 1px solid $c-orange_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+            &:active {
+              background-color: $c-orange_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
+          }
+          .tertiary {
+            background-color: transparent;
+            border: 1px solid $c-orange;
+            color: $c-orange_dark;
+            &:hover {
+              background-color: $c-orange_hover;
+              border: 1px solid $c-orange_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+            &:active {
+              background-color: $c-orange_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
+          }
+          :disabled {
+            background-color: $c-button_disabled;
+            color: $c-grey_dark;
+            border: 1px solid $c-button_disabled;
+            cursor: not-allowed;
+            &:hover {
+              background-color: $c-button_disabled;
+              color: $c-grey_dark;
+              border: 1px solid $c-button_disabled;
+              
+            }
+          }
+        }
+      }
+    }
+  }
+  &.purple {
+    .buttonsIcons__container {
+      &--line {
+        &-group {
+          .primary {
+            background-color: $c-purple;
+            color: $c-white;
+            border: 1px solid $c-purple;
+            &:hover {
+              background-color: $c-purple_hover;
+              border: 1px solid $c-purple_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+            &:active {
+              background-color: $c-purple_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
+          }
+          .secondary {
+            background-color: $c-purple_light;
+            color: $c-purple_dark;
+            border: 1px solid $c-purple_light;
+            &:hover {
+              background-color: $c-purple_hover;
+              border: 1px solid $c-purple_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+            &:active {
+              background-color: $c-purple_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
+          }
+          .tertiary {
+            background-color: transparent;
+            border: 1px solid $c-purple;
+            color: $c-purple_dark;
+            &:hover {
+              background-color: $c-purple_hover;
+              border: 1px solid $c-purple_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+            &:active {
+              background-color: $c-purple_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
+          }
+          :disabled {
+            background-color: $c-button_disabled;
+            color: $c-grey_dark;
+            border: 1px solid $c-button_disabled;
+            cursor: not-allowed;
+            &:hover {
+              background-color: $c-button_disabled;
+              color: $c-grey_dark;
+              border: 1px solid $c-button_disabled;
+              
+            }
+          }
+        }
+      }
+    }
+  }
+  &.black {
+    .buttonsIcons__container {
+      &--line {
+        &-group {
+          .primary {
+            background-color: $c-black;
+            color: $c-white;
+            border: 1px solid $c-black;
+            &:hover {
+              background-color: $c-black_hover;
+              border: 1px solid $c-black_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+            &:active {
+              background-color: $c-black_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
+          }
+          .secondary {
+            background-color: $c-black_light;
+            color: $c-black_dark;
+            border: 1px solid $c-black_light;
+            &:hover {
+              background-color: $c-black_hover;
+              border: 1px solid $c-black_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+            &:active {
+              background-color: $c-black_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
+          }
+          .tertiary {
+            background-color: transparent;
+            border: 1px solid $c-black;
+            color: $c-black_dark;
+            &:hover {
+              background-color: $c-black_hover;
+              border: 1px solid $c-black_hover;
+              color: $c-white;
+              transition: .2s ease-out;
+            }
+            &:active {
+              background-color: $c-black_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
+          }
+          :disabled {
+            background-color: $c-button_disabled;
+            color: $c-grey_dark;
+            border: 1px solid $c-button_disabled;
+            cursor: not-allowed;
+            &:hover {
+              background-color: $c-button_disabled;
+              color: $c-grey_dark;
+              border: 1px solid $c-button_disabled;
+              
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // test
+  .container__switch--color {
+    display: flex;
+    justify-content: flex-end;
+    gap: $space-3;
+    .select__color {
+      border-radius: 50%;
+      background-color: $c-white;
+      border: 1px solid $c-grey-light;
+      width: 30px;
+      height: 30px;
+      opacity: 0.5;
+      transition: ease-in .2s;
+      &.active {
+        opacity: 1;
+        transition: ease-out .2s;
+      }
+      &.green {
+        background-color: $c-green;
+      }
+      &.blue {
+        background-color: $c-blue;
+      }
+      &.red {
+        background-color: $c-red;
+      }
+      &.orange {
+        background-color: $c-orange;
+      }
+      &.purple {
+        background-color: $c-purple;
+      }
+      &.black {
+        background-color: $c-black;
+      }
+    }
+  }
+  // end test
+
+  &__container {
+    border: 1px solid $c-grey_light;
+    padding: $space-4;
+    border-radius: 10px;
+    margin: $space-3 0 $space-8 0;
+
+    &--line {
+      display: flex;
+      gap: $space-10;
+      margin: $space-3 0;
+      &-group {
+        // text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        label {
+          font-size: 14px;
+          color: $c-grey_dark;
+          margin-top: $space-3;
+        }
+      }
+    }
+  }
+  &:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
