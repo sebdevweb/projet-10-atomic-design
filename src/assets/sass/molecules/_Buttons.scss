@@ -16,6 +16,10 @@
               color: $c-white;
               transition: .2s ease-out;
             }
+            &:active {
+              background-color: $c-blue_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
           }
           .secondary {
             background-color: $c-blue_light;
@@ -27,6 +31,10 @@
               color: $c-white;
               transition: .2s ease-out;
             }
+            &:active {
+              background-color: $c-blue_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
           }
           .tertiary {
             background-color: transparent;
@@ -37,6 +45,10 @@
               border: 1px solid $c-blue_hover;
               color: $c-white;
               transition: .2s ease-out;
+            }
+            &:active {
+              background-color: $c-blue_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
             }
           }
           :disabled {
@@ -69,6 +81,10 @@
               color: $c-white;
               transition: .2s ease-out;
             }
+            &:active {
+              background-color: $c-red_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
           }
           .secondary {
             background-color: $c-red_light;
@@ -80,6 +96,10 @@
               color: $c-white;
               transition: .2s ease-out;
             }
+            &:active {
+              background-color: $c-red_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
           }
           .tertiary {
             background-color: transparent;
@@ -90,6 +110,10 @@
               border: 1px solid $c-red_hover;
               color: $c-white;
               transition: .2s ease-out;
+            }
+            &:active {
+              background-color: $c-red_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
             }
           }
           :disabled {
@@ -122,6 +146,10 @@
               color: $c-white;
               transition: .2s ease-out;
             }
+            &:active {
+              background-color: $c-orange_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
           }
           .secondary {
             background-color: $c-orange_light;
@@ -132,6 +160,10 @@
               border: 1px solid $c-orange_hover;
               color: $c-white;
               transition: .2s ease-out;
+            }
+            &:active {
+              background-color: $c-orange_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
             }
           }
           .tertiary {
@@ -144,58 +176,9 @@
               color: $c-white;
               transition: .2s ease-out;
             }
-          }
-          :disabled {
-            background-color: $c-button_disabled;
-            color: $c-grey_dark;
-            border: 1px solid $c-button_disabled;
-            cursor: not-allowed;
-            &:hover {
-              background-color: $c-button_disabled;
-              color: $c-grey_dark;
-              border: 1px solid $c-button_disabled;
-              
-            }
-          }
-        }
-      }
-    }
-  }
-  &.yellow {
-    .buttons__container {
-      &--line {
-        &-group {
-          .primary {
-            background-color: $c-yellow;
-            color: $c-white;
-            border: 1px solid $c-yellow;
-            &:hover {
-              background-color: $c-yellow_hover;
-              border: 1px solid $c-yellow_hover;
-              color: $c-white;
-              transition: .2s ease-out;
-            }
-          }
-          .secondary {
-            background-color: $c-yellow_light;
-            color: $c-yellow_dark;
-            border: 1px solid $c-yellow_light;
-            &:hover {
-              background-color: $c-yellow_hover;
-              border: 1px solid $c-yellow_hover;
-              color: $c-white;
-              transition: .2s ease-out;
-            }
-          }
-          .tertiary {
-            background-color: transparent;
-            border: 1px solid $c-yellow;
-            color: $c-yellow_dark;
-            &:hover {
-              background-color: $c-yellow_hover;
-              border: 1px solid $c-yellow_hover;
-              color: $c-white;
-              transition: .2s ease-out;
+            &:active {
+              background-color: $c-orange_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
             }
           }
           :disabled {
@@ -228,6 +211,10 @@
               color: $c-white;
               transition: .2s ease-out;
             }
+            &:active {
+              background-color: $c-purple_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
           }
           .secondary {
             background-color: $c-purple_light;
@@ -239,6 +226,10 @@
               color: $c-white;
               transition: .2s ease-out;
             }
+            &:active {
+              background-color: $c-purple_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
           }
           .tertiary {
             background-color: transparent;
@@ -249,6 +240,10 @@
               border: 1px solid $c-purple_hover;
               color: $c-white;
               transition: .2s ease-out;
+            }
+            &:active {
+              background-color: $c-purple_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
             }
           }
           :disabled {
@@ -281,6 +276,10 @@
               color: $c-white;
               transition: .2s ease-out;
             }
+            &:active {
+              background-color: $c-black_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
           }
           .secondary {
             background-color: $c-black_light;
@@ -292,6 +291,10 @@
               color: $c-white;
               transition: .2s ease-out;
             }
+            &:active {
+              background-color: $c-black_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
           }
           .tertiary {
             background-color: transparent;
@@ -302,6 +305,10 @@
               border: 1px solid $c-black_hover;
               color: $c-white;
               transition: .2s ease-out;
+            }
+            &:active {
+              background-color: $c-black_dark;
+              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
             }
           }
           :disabled {
@@ -349,9 +356,6 @@
       }
       &.orange {
         background-color: $c-orange;
-      }
-      &.yellow {
-        background-color: $c-yellow;
       }
       &.purple {
         background-color: $c-purple;

@@ -81,10 +81,12 @@ button {
     &.middle {
       width: 18px;
       height: 18px;
+      margin-right: $space-2;
     }
     &.right-middle {
       width: 18px;
       height: 18px;
+      margin-left: $space-2;
     }
   }
 }

@@ -12,11 +12,15 @@
 5. fix buttons
 6. add color switcher feature on Buttons.vue
 7. fix button molecule to button atom
+8. fix colors to wcag
+9. fix spacing on button element
 
 
 ## ATOM FORM INPUT
 1. add FormInput.vue atom
 2. add Form.vue molecule
+3. fix colors to wcag
+4. fix spacing on input element
 
 ## VUE ROUTER
 1. add vue-router
