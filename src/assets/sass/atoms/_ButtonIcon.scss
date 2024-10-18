@@ -1,0 +1,21 @@
+.button-icon {
+  width: 44px;
+  height: 44px;
+  display: block;
+  padding: $space-2;
+  &.medium {
+    max-width: 36px;
+    max-height: 36px;
+    padding: $space-1;
+  }
+  &.small {
+    max-width: 30px;
+    max-height: 30px;
+    padding: $space-1;
+  }
+  &.xsmall {
+    max-width: 25px;
+    max-height: 25px;
+    padding: $space-1;
+  }
+}

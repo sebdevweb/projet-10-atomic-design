@@ -48,5 +48,5 @@
   
   
 <script setup>
-  import InputForm from '../atoms/InputForm.vue';
+  import InputForm from '../components/atoms/InputForm.vue';
 </script>

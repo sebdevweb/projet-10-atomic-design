@@ -11,7 +11,9 @@
 // ATOMS
 @import './atoms/Button';
 @import './atoms/InputForm';
+@import './atoms/ButtonIcon';
 
 // MOLECULES
-@import './molecules/Buttons';
-@import './molecules/Form';
+@import './pages/Buttons';
+@import './pages/Form';
+@import './pages/ButtonsIcons';
