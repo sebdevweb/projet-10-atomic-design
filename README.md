@@ -34,3 +34,4 @@
 
 ## NAVIGATION-COMP
 1. fix width navigation
+2. fix width nav and content in responsive mode

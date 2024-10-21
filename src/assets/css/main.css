@@ -42,11 +42,16 @@ body {
 }
 
 aside {
-  max-width: 400px;
+  max-width: 320px;
   width: 100%;
   padding: 24px 12px 24px 24px;
   border-right: 1px solid #cecece;
   box-shadow: 8px 0px 10px 0px rgba(0, 0, 0, 0.15);
+}
+@media screen and (max-width: 1024px) {
+  aside {
+    max-width: 270px;
+  }
 }
 aside .nav__container {
   position: fixed;
@@ -63,26 +68,32 @@ aside .nav__container .logo span {
 }
 @media screen and (max-width: 1024px) {
   aside .nav__container .logo {
-    font-size: 18px;
+    font-size: 22px;
     transition: ease-out 0.2s;
   }
 }
 aside .nav__container nav {
   margin-top: 48px;
 }
+aside .nav__container nav h3 {
+  font-size: 16px;
+}
 aside .nav__container nav ul {
   list-style: none;
   display: flex;
   margin: 16px;
-  gap: 16px;
+  gap: 8px;
   flex-direction: column;
 }
 aside .nav__container nav ul:not(:last-child) {
-  margin-bottom: 48px;
+  margin-bottom: 36px;
+}
+aside .nav__container nav ul li {
+  font-size: 14px;
 }
 aside .nav__container nav ul a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   color: #919191;
   transition: ease-in 0.1s;
   position: relative;
@@ -630,6 +641,11 @@ button svg.right-middle {
   justify-content: flex-end;
   gap: 12px;
 }
+@media screen and (max-width: 960px) {
+  .buttons .container__switch--color {
+    margin-bottom: 24px;
+  }
+}
 .buttons .container__switch--color .select__color {
   border-radius: 50%;
   background-color: #ffffff;
@@ -675,9 +691,22 @@ button svg.right-middle {
 .buttons__container--line-group {
   text-align: center;
 }
+@media screen and (max-width: 716px) {
+  .buttons__container--line-group {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+  }
+}
 .buttons__container--line-group label {
   font-size: 14px;
   color: #494848;
+}
+@media screen and (max-width: 1260px) {
+  .buttons__container--line {
+    flex-wrap: wrap;
+  }
 }
 .buttons:not(:last-child) {
   margin-bottom: 0;
@@ -704,6 +733,28 @@ button svg.right-middle {
   font-size: 14px;
   color: #494848;
   margin-top: 8px;
+}
+@media screen and (max-width: 873px) {
+  .form__container form .form__container--item {
+    flex-direction: row;
+    gap: 8px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .form__container form .form__container--item {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .form__container form {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 740px) {
+  .form__container form {
+    gap: 40px;
+  }
 }
 
 .buttonsIcons {
@@ -995,6 +1046,11 @@ button svg.right-middle {
   justify-content: flex-end;
   gap: 12px;
 }
+@media screen and (max-width: 960px) {
+  .buttonsIcons .container__switch--color {
+    margin-bottom: 24px;
+  }
+}
 .buttonsIcons .container__switch--color .select__color {
   border-radius: 50%;
   background-color: #ffffff;
@@ -1037,16 +1093,33 @@ button svg.right-middle {
   gap: 40px;
   margin: 12px 0;
 }
+@media screen and (max-width: 1260px) {
+  .buttonsIcons__container--line {
+    flex-wrap: wrap;
+  }
+}
 .buttonsIcons__container--line-group {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 760px) {
+  .buttonsIcons__container--line-group {
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+  }
+}
 .buttonsIcons__container--line-group label {
   font-size: 14px;
   color: #494848;
   margin-top: 12px;
+}
+@media screen and (max-width: 760px) {
+  .buttonsIcons__container--line-group label {
+    margin-top: 0;
+  }
 }
 .buttonsIcons:not(:last-child) {
   margin-bottom: 0;

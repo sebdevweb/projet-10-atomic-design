@@ -1,9 +1,12 @@
 aside {
-  max-width: 400px;
+  max-width: 320px;
   width: 100%;
   padding: $space-6 $space-3 $space-6 $space-6;
   border-right: 1px solid $c-grey_light;
   box-shadow: 8px 0px 10px 0px rgba(0, 0, 0, 0.15);
+  @media screen and (max-width: 1024px) {
+    max-width: 270px;
+  }
   .nav__container {
     position: fixed;
     .logo {
@@ -16,25 +19,31 @@ aside {
         color: $c-grey_dark;
       }
       @media screen and (max-width: 1024px) {
-        font-size: 18px;
+        font-size: 22px;
         transition: ease-out .2s;
       }
     }
     nav {
       margin-top: $space-12;
+      h3 {
+        font-size: 16px;
+      }
       ul {
         list-style: none;
         display: flex;
         margin: $space-4;
-        gap: $space-4;
+        gap: $space-2;
         flex-direction: column;
         &:not(:last-child) {
-          margin-bottom: $space-12;
+          margin-bottom: $space-9;
+        }
+        li {
+          font-size: 14px;
         }
         
         a {
           text-decoration: none;
-          font-size: 16px;
+          font-size: 14px;
           color: $c-grey;
           transition: ease-in .1s;
           position: relative;

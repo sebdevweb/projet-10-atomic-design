@@ -333,6 +333,9 @@
     display: flex;
     justify-content: flex-end;
     gap: $space-3;
+    @media screen and (max-width: 960px) {
+      margin-bottom: $space-6;
+    }
     .select__color {
       border-radius: 50%;
       background-color: $c-white;
@@ -377,17 +380,27 @@
       display: flex;
       gap: $space-10;
       margin: $space-3 0;
+      @media screen and (max-width: 1260px) {
+        flex-wrap: wrap;
+      }
       &-group {
-        // text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        @media screen and (max-width: 760px) {
+          flex-direction: row;
+          gap: $space-3;
+          align-items: center;
+        }
         
         label {
           font-size: 14px;
           color: $c-grey_dark;
           margin-top: $space-3;
+          @media screen and (max-width: 760px) {
+            margin-top: 0;
+          }
         }
       }
     }
