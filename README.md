@@ -26,6 +26,7 @@
 2. add Form.vue molecule
 3. fix colors to wcag
 4. fix spacing on input element
+5. fix icon input field password
 
 ## VUE ROUTER
 1. add vue-router

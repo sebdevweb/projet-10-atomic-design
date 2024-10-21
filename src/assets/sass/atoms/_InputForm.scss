@@ -1,88 +1,110 @@
-input {
-  height: 40px;
-  max-width: 300px;
-  width: 100%;
-  border-radius: 5px;
-  border: 1px solid $c-grey_extra-light;
-  background: $c-grey_extra-light;
-  padding: $space-2 $space-3;
-  font-size: 16px;
-  color: $c-grey_dark;
-  transition: ease-in .1s;
+.container__input {
   position: relative;
 
-  &.default {
-    &::placeholder {
-      font-size: 16px;
-      color:$c-grey_dark;
-      font-style: italic;
+  input {
+    height: 40px;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid $c-grey_extra-light;
+    background: $c-grey_extra-light;
+    padding: $space-2 $space-3;
+    font-size: 16px;
+    color: $c-grey_dark;
+    transition: ease-in .1s;
+    position: relative;
+  
+    &.default {
+      &::placeholder {
+        font-size: 16px;
+        color:$c-grey_dark;
+        font-style: italic;
+      }
+      &:hover {
+        border: 1px solid $c-grey;
+        transition: ease-out .2s;
+        background-color: $c-grey_extra-light;
+        &::placeholder {
+          color: $c-grey_dark;
+        }
+      }
+      &:focus-within {
+        border: 1px solid $c-grey_dark;
+        outline: none;
+        box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+      }
     }
-    &:hover {
-      border: 1px solid $c-grey;
-      transition: ease-out .2s;
-      background-color: $c-grey_extra-light;
+  
+    &.disabled {
+      background-color: $c-grey_light;
+      color: $c-grey_dark;
+      cursor: not-allowed;
+      pointer-events: none;
       &::placeholder {
         color: $c-grey_dark;
       }
+      &:hover {
+        border: 1px solid $c-grey_light;
+      }
     }
-    &:focus-within {
-      border: 1px solid $c-grey_dark;
-      outline: none;
-      box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
-    }
-  }
-
-  &:disabled {
-    background-color: $c-grey_light;
-    color: $c-grey_dark;
-    cursor: not-allowed;
-    &::placeholder {
-      color: $c-grey_dark;
-    }
-    &:hover {
-      border: 1px solid $c-grey_light;
-    }
-  }
+    
   
-
-  // ERROR
-  &.error {
-    background-color: $c-red_light;
-    border: 1px solid $c-red_light;
-    &::placeholder {
-      color: $c-red_dark;
+    // ERROR
+    &.error {
+      background-color: $c-red_light;
+      border: 1px solid $c-red_light;
+      color: $c-black;
+      &::placeholder {
+        color: $c-red_dark;
+      }
+      &:hover {
+        border: 1px solid $c-red;
+      }
+      &:focus-within {
+        border: 1px solid $c-red_dark;
+        outline: none;
+        box-shadow: 0 3px 10px 0 rgba(192, 79, 79, 0.5);
+      }
     }
-    &:hover {
-      border: 1px solid $c-red;
-      cursor: not-allowed;
-    }
-    &:focus-within {
-      border: 1px solid $c-red_dark;
-      outline: none;
-      box-shadow: 0 3px 10px 0 rgba(192, 79, 79, 0.5);
+  
+    // SUCCESS
+    &.success {
+      background-color: $c-green_light;
+      border: 1px solid $c-green_light;
+      pointer-events: none;
+      cursor: default;
+      &::placeholder {
+        color: $c-green_dark;
+      }
+      &:hover {
+        border: 1px solid $c-green;
+      }
+      &:focus-within {
+        border: 1px solid $c-green_dark;
+        outline: none;
+        box-shadow: 0 3px 10px 0 rgba(79, 192, 141, 0.5);
+      }
     }
   }
 
-  // SUCCESS
-  &.success {
-    background-color: $c-green_light;
-    border: 1px solid $c-green_light;
-    cursor: default;
-    &::placeholder {
-      color: $c-green_dark;
-    }
-    &:hover {
-      border: 1px solid $c-green;
-    }
-    &:focus-within {
-      border: 1px solid $c-green_dark;
-      outline: none;
-      box-shadow: 0 3px 10px 0 rgba(79, 192, 141, 0.5);
-    }
+  // RIGHT ICON
+  .right {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 50%;
+    right: $space-2;
+    transform: translateY(-50%);
+    color: $c-grey_dark;
   }
 
-  // RIGH-ICON
-  // &.right-icon {
-
-  // }
+  .error + .right {
+    color: $c-red_dark;
+  }
+  .success + .right {
+    color: $c-green_dark;
+  }
+  .disabled + .right {
+    color: $c-grey;
+  }
 }

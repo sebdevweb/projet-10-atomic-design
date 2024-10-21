@@ -221,7 +221,10 @@ button svg.right-middle {
   margin-left: 8px;
 }
 
-input {
+.container__input {
+  position: relative;
+}
+.container__input input {
   height: 40px;
   max-width: 300px;
   width: 100%;
@@ -234,66 +237,86 @@ input {
   transition: ease-in 0.1s;
   position: relative;
 }
-input.default::placeholder {
+.container__input input.default::placeholder {
   font-size: 16px;
   color: #494848;
   font-style: italic;
 }
-input.default:hover {
+.container__input input.default:hover {
   border: 1px solid #919191;
   transition: ease-out 0.2s;
   background-color: #eeeeee;
 }
-input.default:hover::placeholder {
+.container__input input.default:hover::placeholder {
   color: #494848;
 }
-input.default:focus-within {
+.container__input input.default:focus-within {
   border: 1px solid #494848;
   outline: none;
   box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
 }
-input:disabled {
+.container__input input.disabled {
   background-color: #cecece;
   color: #494848;
   cursor: not-allowed;
+  pointer-events: none;
 }
-input:disabled::placeholder {
+.container__input input.disabled::placeholder {
   color: #494848;
 }
-input:disabled:hover {
+.container__input input.disabled:hover {
   border: 1px solid #cecece;
 }
-input.error {
+.container__input input.error {
   background-color: #eda0a0;
   border: 1px solid #eda0a0;
+  color: #26293c;
 }
-input.error::placeholder {
+.container__input input.error::placeholder {
   color: #72000c;
 }
-input.error:hover {
+.container__input input.error:hover {
   border: 1px solid #d20319;
-  cursor: not-allowed;
 }
-input.error:focus-within {
+.container__input input.error:focus-within {
   border: 1px solid #72000c;
   outline: none;
   box-shadow: 0 3px 10px 0 rgba(192, 79, 79, 0.5);
 }
-input.success {
+.container__input input.success {
   background-color: #ceffd0;
   border: 1px solid #ceffd0;
+  pointer-events: none;
   cursor: default;
 }
-input.success::placeholder {
+.container__input input.success::placeholder {
   color: #0e670b;
 }
-input.success:hover {
+.container__input input.success:hover {
   border: 1px solid #3fb44f;
 }
-input.success:focus-within {
+.container__input input.success:focus-within {
   border: 1px solid #0e670b;
   outline: none;
   box-shadow: 0 3px 10px 0 rgba(79, 192, 141, 0.5);
+}
+.container__input .right {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  color: #494848;
+}
+.container__input .error + .right {
+  color: #72000c;
+}
+.container__input .success + .right {
+  color: #0e670b;
+}
+.container__input .disabled + .right {
+  color: #919191;
 }
 
 .button-icon {
