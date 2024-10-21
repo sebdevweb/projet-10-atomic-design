@@ -333,6 +333,9 @@
     display: flex;
     justify-content: flex-end;
     gap: $space-3;
+    @media screen and (max-width: 960px ) {
+      margin-bottom: $space-6;
+    }
     .select__color {
       border-radius: 50%;
       background-color: $c-white;
@@ -379,11 +382,20 @@
       margin: $space-3 0;
       &-group {
         text-align: center;
+        @media screen and (max-width:716px) {
+          display: flex;
+          flex-direction: row;
+          gap: $space-2;
+          align-items: center;
+        }
         
         label {
           font-size: 14px;
           color: $c-grey_dark;
         }
+      }
+      @media screen and (max-width: 1260px) {
+        flex-wrap: wrap;
       }
     }
   }

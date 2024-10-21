@@ -17,8 +17,23 @@
           font-size: 14px;
           color: $c-grey_dark;
           margin-top: $space-2;
-        }     
+        }
+        @media screen and (max-width: 873px) {
+          flex-direction: row;
+          gap: $space-2;
+        }   
+        @media screen and (max-width: 740px) {
+          flex-direction: column;
+          gap: $space-1;
+        }   
       }
+      @media screen and (max-width: 1400px) {
+        flex-wrap: wrap;
+      }
+      @media screen and (max-width: 740px) {
+        
+        gap: $space-10;
+      }   
     }
   }
 }
