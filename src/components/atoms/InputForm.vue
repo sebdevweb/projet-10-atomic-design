@@ -1,14 +1,22 @@
 <template>
-  <input 
-    :type="inputType" 
-    :placeholder="inputPlaceholder"
-    :class="`${className}`"
-  >
+  <div class="container__input">
+    <input 
+      :type="inputType" 
+      :placeholder="inputPlaceholder"
+      :class="`${className}`"
+      :value="inputValue"
+    >
   
+    <component :is="props.rightIcon" class="right" />
+  </div>
 </template>
 
 
 <script setup>
+
+  defineOptions({
+    inheritAttrs: false
+  })  
 
   const props = defineProps({
     inputPlaceholder: {
@@ -25,6 +33,9 @@
     },
     className: {
       type: String
+    },
+    rightIcon: {
+      type: Function
     }
   })
 </script>
