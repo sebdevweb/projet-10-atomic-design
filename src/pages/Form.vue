@@ -22,6 +22,7 @@
           <label>Disabled input</label>
         </div>
       </form>
+      <hr>
       <h3>Input type password <span>(with right icon)</span></h3>
       <form action="">
         <div class="form__container--item">
@@ -41,6 +42,46 @@
           <label>Disabled input</label>
         </div>
       </form>
+      <hr>
+      <h3>Input type text <span>(with left box icon)</span></h3>
+      <form action="">
+        <div class="form__container--item">
+          <InputForm class-name="default left-icon" input-type="text" value="" :leftIcon="LockClosedIcon" />
+          <label>Default input</label>
+        </div>
+        <div class="form__container--item">
+          <InputForm class-name="error left-icon" input-type="text" value="" :leftIcon="LockClosedIcon" />
+          <label>Error input</label>
+        </div>
+        <div class="form__container--item">
+          <InputForm class-name="success left-icon" input-type="text" value="" :leftIcon="LockClosedIcon" />
+          <label>Success input</label>
+        </div>
+        <div class="form__container--item">
+          <InputForm class-name="disabled left-icon" input-type="text" value="" :leftIcon="LockClosedIcon" />
+          <label>Disabled input</label>
+        </div>
+      </form>
+      <hr>
+      <h3>Input type password <span>(with left box icon & right icon)</span></h3>
+      <form action="">
+        <div class="form__container--item">
+          <InputForm class-name="default left-icon right-icon" input-type="password" value="password" :leftIcon="LockClosedIcon" :rightIcon="EyeSlashIcon" />
+          <label>Default input</label>
+        </div>
+        <div class="form__container--item">
+          <InputForm class-name="error left-icon right-icon" input-type="password" value="password" :leftIcon="LockClosedIcon" :rightIcon="EyeSlashIcon" />
+          <label>Error input</label>
+        </div>
+        <div class="form__container--item">
+          <InputForm class-name="success left-icon right-icon" input-type="password" value="password" :leftIcon="LockClosedIcon" :rightIcon="EyeSlashIcon" />
+          <label>Success input</label>
+        </div>
+        <div class="form__container--item">
+          <InputForm class-name="disabled left-icon right-icon" input-type="password" value="password" :leftIcon="LockClosedIcon" :rightIcon="EyeSlashIcon" />
+          <label>Disabled input</label>
+        </div>
+      </form>
       
     </div>
   </div>
@@ -51,4 +92,5 @@
   import InputForm from '../components/atoms/InputForm.vue';
   import { EyeSlashIcon } from '@heroicons/vue/20/solid'
   import { EyeIcon } from '@heroicons/vue/20/solid'
+  import { LockClosedIcon } from '@heroicons/vue/20/solid'
 </script>

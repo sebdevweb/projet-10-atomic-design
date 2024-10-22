@@ -239,10 +239,10 @@ button svg.right-middle {
   height: 40px;
   max-width: 300px;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 6px;
   border: 1px solid #eeeeee;
   background: #eeeeee;
-  padding: 8px 12px;
+  padding: 8px 32px 8px 12px;
   font-size: 16px;
   color: #494848;
   transition: ease-in 0.1s;
@@ -271,6 +271,7 @@ button svg.right-middle {
   color: #494848;
   cursor: not-allowed;
   pointer-events: none;
+  border: 1px solid #dfdfdf;
 }
 .container__input input.disabled::placeholder {
   color: #494848;
@@ -328,6 +329,37 @@ button svg.right-middle {
 }
 .container__input .disabled + .right {
   color: #919191;
+}
+.container__input .box__icon {
+  width: 40px;
+  height: 40px;
+  background-color: #494848;
+  position: absolute;
+  z-index: 2;
+  border-radius: 6px 0 0 6px;
+}
+.container__input .box__icon .left {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  left: 50%;
+  z-index: 2;
+}
+.container__input .error.left-icon, .container__input .default.left-icon,
+.container__input .success.left-icon, .container__input .disabled.left-icon {
+  text-indent: 36px;
+}
+.container__input:has(.error) .box__icon {
+  background-color: #72000c;
+}
+.container__input:has(.success) .box__icon {
+  background-color: #0e670b;
+}
+.container__input:has(.disabled) .box__icon {
+  background-color: #919191;
 }
 
 .button-icon {
