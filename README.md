@@ -27,6 +27,7 @@
 3. fix colors to wcag
 4. fix spacing on input element
 5. fix icon input field password
+6. add left-icon & right-icon
 
 ## VUE ROUTER
 1. add vue-router

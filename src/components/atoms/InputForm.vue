@@ -1,12 +1,14 @@
 <template>
   <div class="container__input">
+    <div class="box__icon" v-if="props.leftIcon">
+      <component :is="props.leftIcon" class="left" />
+    </div>
     <input 
       :type="inputType" 
       :placeholder="inputPlaceholder"
       :class="`${className}`"
       :value="inputValue"
     >
-  
     <component :is="props.rightIcon" class="right" />
   </div>
 </template>
@@ -25,7 +27,7 @@
     },
     inputValue: {
       type: String,
-      default: 'Your texte'
+      default: 'Your text'
     },
     inputType: {
       type: String,
@@ -35,6 +37,9 @@
       type: String
     },
     rightIcon: {
+      type: Function
+    },
+    leftIcon: {
       type: Function
     }
   })
