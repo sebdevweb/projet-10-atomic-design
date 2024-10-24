@@ -11,7 +11,7 @@
       </ul>
       <ul>
         <li>Form fields components</li>
-        <RouterLink to="/input">Input field</RouterLink>
+        <RouterLink to="/input-text">Input text field</RouterLink>
       </ul>
       <h3>MOLECULES</h3>
     </nav>
