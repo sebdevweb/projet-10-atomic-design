@@ -28,6 +28,9 @@
 4. fix spacing on input element
 5. fix icon input field password
 6. add left-icon & right-icon
+7. rename InputForm.vue to InputText.vue
+8. rename Form.vue to FormInputText.vue
+9. rename scss
 
 ## VUE ROUTER
 1. add vue-router

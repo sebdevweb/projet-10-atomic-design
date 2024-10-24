@@ -12,13 +12,8 @@
 
 <script setup>
   import Buttons from './pages/Buttons.vue';
-import ButtonsIcons from './pages/ButtonsIcons.vue';
-  import Form from './pages/Form.vue';
-import Navbar from './components/Navbar.vue';
+  import ButtonsIcons from './pages/ButtonsIcons.vue';
+  import FormInputText from './pages/FormInputText.vue';
+  import Navbar from './components/Navbar.vue';
 
 </script>
-
-
-<style scoped>
-
-</style>
