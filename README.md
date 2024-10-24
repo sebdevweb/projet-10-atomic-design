@@ -39,3 +39,6 @@
 ## NAVIGATION-COMP
 1. fix width navigation
 2. fix width nav and content in responsive mode
+
+## ERROR 404 COMP
+1. add new error404 component

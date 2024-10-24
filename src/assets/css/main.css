@@ -1157,4 +1157,32 @@ button svg.right-middle {
   margin-bottom: 0;
 }
 
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.error h1 {
+  text-align: center;
+  color: #3fb44f;
+}
+.error h1 span {
+  color: #0e670b;
+}
+.error__img {
+  max-width: 500px;
+}
+.error p {
+  font-size: 16px;
+  color: #3fb44f;
+}
+.error p a {
+  color: #3fb44f;
+  transition: 0.2s ease-in;
+}
+.error p a:hover {
+  color: #0e670b;
+  transition: 0.3s ease-out;
+}
+
 /*# sourceMappingURL=main.css.map */
