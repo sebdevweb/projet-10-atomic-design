@@ -1,5 +1,5 @@
 <template>
-  <h1>Form Input Text component</h1>
+  <h1>Input Text component</h1>
   <div class="form">
     <div class="form__container">
       <h3>Input type text</h3>
