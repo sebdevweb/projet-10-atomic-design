@@ -12,9 +12,11 @@
 @import './atoms/Button';
 @import './atoms/InputText';
 @import './atoms/ButtonIcon';
+@import './atoms/InputSelect';
 
 // PAGES
 @import './pages/Buttons';
 @import './pages/FormInputText';
 @import './pages/ButtonsIcons';
-@import './pages/404'
+@import './pages/404';
+@import './pages/FormInputSelect';

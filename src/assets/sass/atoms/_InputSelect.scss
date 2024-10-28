@@ -1,0 +1,52 @@
+.custom-select {
+  min-width: 300px;
+  width: 100%;
+  position: relative;
+  select {
+    appearance: none;
+    width: 100%;
+    font-size: 1.15rem;
+    padding: 0.675em 6em 0.675em 1em;
+    background-color: #fff;
+    border: 1px solid #caced1;
+    border-radius: 0.25rem;
+    color: #000;
+    cursor: pointer;
+    background-color: $c-white;
+    border-radius: calc($space-2 - ($space-1 / 2));
+    color: $c-grey_dark;
+    border: 1px solid $c-grey_light;
+    transition: .2s ease-in;
+    &:hover {
+      background-color: $c-grey_extra-light;
+      transition: .3s ease-out;
+      &::after {
+
+        transform: rotate(180deg);
+      }
+    }
+    &:focus-visible {
+      border: 1px solid $c-grey;
+      box-shadow: 0 0 5px $c-grey_light;
+      outline: none;
+    }
+    option {
+      background-color: transparent;
+      &:hover {
+        background-color: maroon;
+      }
+    }
+  }
+  &::after {
+    --size: 0.3rem;
+    position: absolute;
+    content: "";
+    right: 1rem;
+  }
+  &::after {
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-top: var(--size) solid black;
+    top: 50%;
+  }
+}
