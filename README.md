@@ -21,7 +21,7 @@
 3. change molecules path files to pages 
 
 
-## ATOM FORM INPUT
+## ATOM FORM INPUT TEXT
 1. add FormInput.vue atom
 2. add Form.vue molecule
 3. fix colors to wcag
@@ -42,3 +42,7 @@
 
 ## ERROR 404 COMP
 1. add new error404 component
+
+## ATOM FORM INPUT SELECT
+1. add new InputSelect.vue
+2. add new FormInputSelect.vue
